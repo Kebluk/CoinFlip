@@ -1,0 +1,22 @@
+{
+  "name": "coinflip",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLI tool for gambling imaginary FlipCoins on the outcome of a coin flip.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "node scripts/clean.js",
+    "start": "ts-node src/index.ts",
+    "build": "npm run clean && tsc"
+  },
+  "keywords": [
+    "coin-flip"
+  ],
+  "author": "kebluk",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
