@@ -1,22 +1,36 @@
 {
-  "name": "coinflip",
-  "version": "1.0.0",
-  "type": "module",
-  "description": "CLI tool for gambling imaginary FlipCoins on the outcome of a coin flip.",
-  "main": "dist/index.js",
-  "scripts": {
-    "clean": "node scripts/clean.js",
-    "start": "ts-node src/index.ts",
-    "build": "npm run clean && tsc"
-  },
-  "keywords": [
-    "coin-flip"
-  ],
-  "author": "kebluk",
-  "license": "GPL-3.0-only",
-  "devDependencies": {
-    "@types/node": "^24.6.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  }
+    "name": "@kebluk/coinflip",
+    "version": "1.0.1",
+    "type": "module",
+    "description": "CLI app for gambling imaginary FlipCoins on the outcome of a coin flip.",
+    "main": "dist/index.js",
+    "scripts": {
+        "clean": "node scripts/clean.js",
+        "build": "npm run clean && tsc",
+        "start": "npm run build && node dist/index.js"
+    },
+    "keywords": [
+        "coin-flip"
+    ],
+    "author": "kebluk",
+    "license": "GPL-3.0-only",
+    "dependencies": {
+        "chalk": "^5.6.2",
+        "commander": "^14.0.1",
+        "inquirer": "^12.9.6",
+        "ora": "^9.0.0",
+        "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "@types/node": "^24.6.2",
+        "typescript": "^5.9.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kebluk/CoinFlip.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Kebluk/CoinFlip/issues"
+    },
+    "homepage": "https://github.com/Kebluk/CoinFlip#readme"
 }
